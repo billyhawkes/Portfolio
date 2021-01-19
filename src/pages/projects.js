@@ -1,15 +1,16 @@
 import React from "react"
 import styled from "styled-components"
+
 import Layout from "../components/Layout"
 
-const StyledIndex = styled.div`
+const StyledProjects = styled.div`
     height: 1000px;
 `
 
-export default function Home() {
+export default function projects() {
     return (
         <Layout>
-            <StyledIndex>Hello world!</StyledIndex>
+            <StyledProjects>Projects Page</StyledProjects>
         </Layout>
     )
 }

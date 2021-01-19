@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+    /* Your site config here */
+    siteMetadata: {
+        title: "Billy Hawkes Portfolio",
+        email: "billyhawkes02@gmail.com",
+    },
+    plugins: ["gatsby-plugin-styled-components"],
 }
