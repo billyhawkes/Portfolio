@@ -4,13 +4,15 @@ import "../App.css"
 // Components
 import Header from "./Header"
 import Footer from "./Footer"
+import Socials from "./Socials"
 
 export default function Layout({ children }) {
-  return (
-    <div>
-      <Header />
-      {children}
-      <Footer />
-    </div>
-  )
+    return (
+        <div>
+            <Header />
+            <Socials />
+            {children}
+            <Footer />
+        </div>
+    )
 }
