@@ -5,7 +5,6 @@ import {
     faGithub,
     faLinkedin,
     faTwitter,
-    faMailchimp,
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
@@ -52,7 +51,8 @@ export default function Links() {
                 </a>
                 <a href="https://twitter.com/hawkes_billy" target="_blank">
                     <li>
-                        Twitter <FontAwesomeIcon icon={faTwitter} size="2x" />
+                        Twitter
+                        <FontAwesomeIcon icon={faTwitter} size="2x" />
                     </li>
                 </a>
                 <a href="mailto: billyhawkes02@gmail.com" target="_blank">

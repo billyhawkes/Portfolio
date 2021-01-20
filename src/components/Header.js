@@ -16,9 +16,11 @@ const StyledHeader = styled.header`
     }
     ul {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        width: 15rem;
+    }
+    li {
+        display: inline-block;
+        margin-left: 2rem;
     }
     a {
         font-size: 1.5rem;
@@ -36,6 +38,12 @@ export default function Header() {
                     </li>
                     <li>
                         <Link to="/projects">Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/photos">Photos</Link>
                     </li>
                 </ul>
             </nav>
