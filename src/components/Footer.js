@@ -3,11 +3,13 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 
 const StyledFooter = styled.footer`
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #171a1d;
     padding: 2rem 3rem;
-    bottom: 0;
 
     a {
         text-decoration: underline;

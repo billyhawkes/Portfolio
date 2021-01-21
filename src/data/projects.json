@@ -1,8 +1,0 @@
-{
-    "name": "Healthy Restaurant",
-    "stack": ["HTML & CSS", "JAVASCRIPT", "RESPONSIVE", "GOOGLE API"],
-    "desc": "This is a concept website for a restaurant named Fitty. Fitty is health centered and located in Toronto. This website contains a detailed menu system with multiple tabs (food and smoothies), a Google location API configuration, and a simple and clean display including responsive design",
-    "github": "https://github.com/billyhawkes/Healthy-Restaurant",
-    "preview": "https://billyhawkes.github.io/Healthy-Restaurant/",
-    "image": "Healthy-Restaurant-Image.png"
-}

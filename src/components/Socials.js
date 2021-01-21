@@ -34,7 +34,11 @@ export default function Links() {
     return (
         <StyledLinks>
             <ul>
-                <a href="https://github.com/billyhawkes" target="_blank">
+                <a
+                    href="https://github.com/billyhawkes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <li>
                         Github
                         <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -43,19 +47,28 @@ export default function Links() {
                 <a
                     href="https://www.linkedin.com/in/billy-hawkes-a2b9751b5/"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <li>
                         LinkedIn
                         <FontAwesomeIcon icon={faLinkedin} size="2x" />
                     </li>
                 </a>
-                <a href="https://twitter.com/hawkes_billy" target="_blank">
+                <a
+                    href="https://twitter.com/hawkes_billy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <li>
                         Twitter
                         <FontAwesomeIcon icon={faTwitter} size="2x" />
                     </li>
                 </a>
-                <a href="mailto: billyhawkes02@gmail.com" target="_blank">
+                <a
+                    href="mailto: billyhawkes02@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <li>
                         Mail
                         <FontAwesomeIcon icon={faEnvelope} size="2x" />
