@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 // Components //
-import Project from "./Project"
+import Project from "./projects/Project"
 import styled from "styled-components"
 
-const StyledHighlightedProjects = styled.div`
+const StyledHighlightedProjects = styled.section`
     display: flex;
     flex-direction: column;
 `
@@ -24,6 +24,11 @@ export default function HighlightedProjects() {
                         preview
                         name
                         highlighted
+                        image {
+                            fluid {
+                                ...GatsbyContentfulFluid
+                            }
+                        }
                     }
                 }
             }
@@ -40,6 +45,7 @@ export default function HighlightedProjects() {
                         description={edge.node.description.description}
                         preview={edge.node.preview}
                         github={edge.node.github}
+                        image={edge.node.image.fluid}
                     />
                 )
             })}
