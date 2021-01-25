@@ -11,17 +11,25 @@ const StyledAbout = styled.div`
     width: 70%;
     height: 88vh;
     margin: auto;
-    p {
-        margin-left: 2rem;
-        flex: 4;
-        color: #94a4b4;
-    }
 `
 const StyledImage = styled.div`
     flex: 2;
     width: 15rem;
     img {
         border-radius: 50%;
+    }
+`
+const StyledContent = styled.div`
+    margin-left: 2rem;
+    flex: 4;
+    p {
+        color: #94a4b4;
+    }
+    div {
+        height: 3px;
+        width: 2rem;
+        background-color: white;
+        margin: 1rem 0;
     }
 `
 export default function About() {
@@ -46,7 +54,11 @@ export default function About() {
                 <StyledImage>
                     <Image fluid={data.contentfulAbout.profileImage.fluid} />
                 </StyledImage>
-                <p>{data.contentfulAbout.about.about}</p>
+                <StyledContent>
+                    <h2>About</h2>
+                    <div />
+                    <p>{data.contentfulAbout.about.about}</p>
+                </StyledContent>
             </StyledAbout>
         </Layout>
     )

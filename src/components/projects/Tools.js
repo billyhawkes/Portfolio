@@ -9,6 +9,7 @@ const StyledTools = styled.div`
         padding: 0.2em 0.5em;
         margin-right: 0.3rem;
         font-size: 0.9em;
+        font-weight: bold;
         height: 1.8em;
         border: 1px solid #171a1d;
     }

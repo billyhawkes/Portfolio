@@ -8,6 +8,9 @@ import styled from "styled-components"
 const StyledHighlightedProjects = styled.section`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 
     h2 {
         text-align: center;

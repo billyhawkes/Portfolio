@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
 
 * {
@@ -8,10 +8,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     background-color: #22262a;
-    font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
 }
 
 a {

@@ -8,12 +8,15 @@ const StyledHero = styled.section`
     justify-content: center;
     flex-direction: column;
     h1 {
-        font-size: 5rem;
+        font-size: 5em;
     }
     h2 {
         margin-top: 1rem;
-        font-size: 2rem;
+        font-size: 2em;
         color: #94a4b4;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 60%;
     }
 `
 

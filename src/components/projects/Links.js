@@ -10,6 +10,7 @@ const StyledLinks = styled.div`
         padding: 0.2rem 0.5rem;
         color: #171a1d;
         border-radius: 0.2rem;
+        transition: all 0.2s linear;
     }
     a:hover {
         background-color: white;
@@ -19,8 +20,12 @@ const StyledLinks = styled.div`
 export default function Links({ github, preview }) {
     return (
         <StyledLinks>
-            <a href={github}>CODE</a>
-            <a href={preview}>SHOW</a>
+            <a href={github} target="_blank">
+                CODE
+            </a>
+            <a href={preview} target="_blank">
+                SHOW
+            </a>
         </StyledLinks>
     )
 }

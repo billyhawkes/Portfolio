@@ -6,18 +6,20 @@ import Tools from "./Tools"
 
 const StyledProject = styled.div`
     display: flex;
-    border: 3px solid white;
     border-radius: 4px;
     margin-top: 2rem;
     background-color: #343a41;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 `
 const ProjectImage = styled.div`
-    flex: 1;
-    border-right: 2px solid white;
+    flex: 2;
 `
 const ProjectContent = styled.div`
+    flex: 4;
     color: #94a4b4;
-    flex: 3;
     padding: 1rem;
 
     h3 {
@@ -25,6 +27,7 @@ const ProjectContent = styled.div`
     }
     p {
         margin-top: 1rem;
+        height: 5rem;
         overflow-y: scroll;
     }
 `

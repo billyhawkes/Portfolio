@@ -14,6 +14,15 @@ const StyledFooter = styled.footer`
     a {
         text-decoration: underline;
     }
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;
+        padding: 1rem;
+        a {
+            margin-top: 0.5rem;
+        }
+    }
 `
 
 export default function Footer() {
