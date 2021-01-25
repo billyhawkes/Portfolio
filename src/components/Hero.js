@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledHero = styled.section`
-    height: 60vh;
+    height: 88vh;
     display: flex;
     align-items: center;
     justify-content: center;

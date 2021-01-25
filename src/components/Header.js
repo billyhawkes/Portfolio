@@ -42,9 +42,6 @@ export default function Header() {
                     <li>
                         <Link to="/about">About</Link>
                     </li>
-                    <li>
-                        <Link to="/photos">Photos</Link>
-                    </li>
                 </ul>
             </nav>
         </StyledHeader>

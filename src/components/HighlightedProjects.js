@@ -8,6 +8,11 @@ import styled from "styled-components"
 const StyledHighlightedProjects = styled.section`
     display: flex;
     flex-direction: column;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
 `
 
 export default function HighlightedProjects() {
@@ -37,9 +42,10 @@ export default function HighlightedProjects() {
     return (
         <StyledHighlightedProjects>
             <h2>Highlighted Projects</h2>
-            {data.allContentfulProject.edges.map(edge => {
+            {data.allContentfulProject.edges.map((edge, index) => {
                 return (
                     <Project
+                        key={index}
                         name={edge.node.name}
                         stack={edge.node.stack}
                         description={edge.node.description.description}

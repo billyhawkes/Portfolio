@@ -7,7 +7,7 @@ const StyledProjects = styled.div`
     height: 1000px;
 `
 
-export default function projects() {
+export default function Projects() {
     return (
         <Layout>
             <StyledProjects>Projects Page</StyledProjects>
