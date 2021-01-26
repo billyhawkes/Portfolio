@@ -8,9 +8,13 @@ const StyledAbout = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 80%;
     height: 88vh;
-    margin: auto;
+    margin: 2rem auto;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 `
 const StyledImage = styled.div`
     flex: 2;
@@ -30,6 +34,13 @@ const StyledContent = styled.div`
         width: 2rem;
         background-color: white;
         margin: 1rem 0;
+    }
+    @media only screen and (max-width: 600px) {
+        margin: 2rem 0;
+        text-align: center;
+        div {
+            margin: 1rem auto;
+        }
     }
 `
 export default function About() {

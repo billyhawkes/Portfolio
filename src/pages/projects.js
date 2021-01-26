@@ -6,7 +6,8 @@ import Project from "../components/projects/Project"
 import Layout from "../components/Layout"
 
 const StyledProjects = styled.div`
-    height: 1000px;
+    width: 80%;
+    margin: auto;
 `
 
 export default function Projects() {

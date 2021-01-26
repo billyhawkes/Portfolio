@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const StyledLinks = styled.div`
     margin-top: 1rem;
+    text-align: center;
     a {
         margin-right: 1rem;
         background-color: #ccc;
@@ -20,10 +21,10 @@ const StyledLinks = styled.div`
 export default function Links({ github, preview }) {
     return (
         <StyledLinks>
-            <a href={github} target="_blank">
+            <a href={github} target="_blank" rel="noreferrer">
                 CODE
             </a>
-            <a href={preview} target="_blank">
+            <a href={preview} target="_blank" rel="noreferrer">
                 SHOW
             </a>
         </StyledLinks>

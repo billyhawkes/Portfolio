@@ -6,7 +6,7 @@ import Tools from "./Tools"
 
 const StyledProject = styled.div`
     display: flex;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-top: 2rem;
     background-color: #343a41;
 
@@ -23,12 +23,18 @@ const ProjectContent = styled.div`
     padding: 1rem;
 
     h3 {
-        font-size: 1.6rem;
+        font-size: 1.6em;
     }
     p {
         margin-top: 1rem;
-        height: 5rem;
+        height: 7.5rem;
         overflow-y: scroll;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 0.8rem;
+        h3 {
+            text-align: center;
+        }
     }
 `
 
