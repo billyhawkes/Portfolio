@@ -5,12 +5,14 @@ import styled from "styled-components"
 import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import HighlightedProjects from "../components/HighlightedProjects"
+import Head from "../components/Head"
 
 const StyledIndex = styled.div``
 
 export default function Home() {
     return (
         <Layout>
+            <Head title="Home" />
             <StyledIndex>
                 <Hero />
                 <HighlightedProjects />

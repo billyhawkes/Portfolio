@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import React from "react"
 import styled from "styled-components"
+import Head from "../components/Head"
 import Layout from "../components/Layout"
 
 const StyledAbout = styled.div`
@@ -62,6 +63,7 @@ export default function About() {
 
     return (
         <Layout>
+            <Head title="About" />
             <StyledAbout>
                 <StyledImage>
                     <Image

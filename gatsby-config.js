@@ -8,7 +8,7 @@ require("dotenv").config()
 module.exports = {
     /* Your site config here */
     siteMetadata: {
-        title: "Billy Hawkes Portfolio",
+        title: "Billy Hawkes",
         email: "billyhawkes02@gmail.com",
     },
     plugins: [
@@ -19,6 +19,7 @@ module.exports = {
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
             },
         },
+        "gatsby-plugin-react-helmet",
         "gatsby-plugin-styled-components",
         "gatsby-transformer-sharp",
         "gatsby-plugin-sharp",

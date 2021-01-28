@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Project from "../components/projects/Project"
 
 import Layout from "../components/Layout"
+import Head from "../components/Head"
 
 const StyledProjects = styled.div`
     width: 80%;
@@ -37,6 +38,7 @@ export default function Projects() {
     `)
     return (
         <Layout>
+            <Head title="Projects" />
             <StyledProjects>
                 {data.allContentfulProject.edges.map((edge, index) => {
                     return (
