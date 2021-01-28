@@ -8,8 +8,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-const StyledLinks = styled.div`
+const StyledLinks = styled.aside`
     position: fixed;
+    z-index: 5;
     left: -5.5rem;
     top: 40%;
 
@@ -29,11 +30,25 @@ const StyledLinks = styled.div`
         background-color: #3f4750;
     }
     @media only screen and (max-width: 600px) {
-        display: none;
+        position: relative;
+        margin-top: 1rem;
+        left: 0;
+        width: 100%;
+        font-size: 0.8rem;
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            transition: none;
+            flex-direction: column-reverse;
+            height: 4rem;
+            width: 4rem;
+        }
     }
 `
 
-export default function Links() {
+export default function Socials() {
     return (
         <StyledLinks>
             <ul>

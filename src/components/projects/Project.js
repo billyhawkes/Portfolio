@@ -10,7 +10,7 @@ const StyledProject = styled.div`
     margin-top: 2rem;
     background-color: #343a41;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         flex-direction: column;
     }
 `
@@ -30,7 +30,7 @@ const ProjectContent = styled.div`
         height: 7.5rem;
         overflow-y: scroll;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         font-size: 0.8rem;
         h3 {
             text-align: center;
@@ -45,11 +45,12 @@ export default function Project({
     github,
     preview,
     image,
+    alt,
 }) {
     return (
         <StyledProject>
             <ProjectImage>
-                <Image fluid={image}></Image>
+                <Image fluid={image} alt={alt}></Image>
             </ProjectImage>
             <ProjectContent>
                 <h3>{name}</h3>

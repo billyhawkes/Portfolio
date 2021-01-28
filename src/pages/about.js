@@ -12,7 +12,7 @@ const StyledAbout = styled.div`
     height: 88vh;
     margin: 2rem auto;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         flex-direction: column;
     }
 `
@@ -35,7 +35,7 @@ const StyledContent = styled.div`
         background-color: white;
         margin: 1rem 0;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         margin: 2rem 0;
         text-align: center;
         div {
@@ -51,6 +51,7 @@ export default function About() {
                     about
                 }
                 profileImage {
+                    description
                     fluid {
                         ...GatsbyContentfulFluid
                     }
@@ -63,7 +64,10 @@ export default function About() {
         <Layout>
             <StyledAbout>
                 <StyledImage>
-                    <Image fluid={data.contentfulAbout.profileImage.fluid} />
+                    <Image
+                        fluid={data.contentfulAbout.profileImage.fluid}
+                        alt={data.contentfulAbout.profileImage.description}
+                    />
                 </StyledImage>
                 <StyledContent>
                     <h2>About</h2>

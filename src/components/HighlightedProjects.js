@@ -16,6 +16,11 @@ const StyledHighlightedProjects = styled.section`
         text-align: center;
         font-size: 2rem;
     }
+    @media only screen and (max-width: 800px) {
+        h2 {
+            font-size: 7vw;
+        }
+    }
 `
 
 export default function HighlightedProjects() {
@@ -33,6 +38,7 @@ export default function HighlightedProjects() {
                         name
                         highlighted
                         image {
+                            description
                             fluid {
                                 ...GatsbyContentfulFluid
                             }
@@ -55,6 +61,7 @@ export default function HighlightedProjects() {
                         preview={edge.node.preview}
                         github={edge.node.github}
                         image={edge.node.image.fluid}
+                        alt={edge.node.image.description}
                     />
                 )
             })}

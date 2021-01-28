@@ -35,7 +35,7 @@ const StyledHeader = styled.header`
             left: 0;
             width: 100%;
             top: 6rem;
-            z-index: 5;
+            z-index: 6;
         }
         ul li {
             margin: 0;

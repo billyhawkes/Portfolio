@@ -25,6 +25,7 @@ export default function Projects() {
                         name
                         highlighted
                         image {
+                            description
                             fluid {
                                 ...GatsbyContentfulFluid
                             }
@@ -47,6 +48,7 @@ export default function Projects() {
                             preview={edge.node.preview}
                             github={edge.node.github}
                             image={edge.node.image.fluid}
+                            alt={edge.node.image.description}
                         />
                     )
                 })}
