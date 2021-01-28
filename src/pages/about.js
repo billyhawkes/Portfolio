@@ -36,7 +36,7 @@ const StyledContent = styled.div`
         background-color: white;
         margin: 1rem 0;
     }
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 1000px) {
         margin: 2rem 0;
         text-align: center;
         div {

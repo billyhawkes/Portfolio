@@ -15,7 +15,7 @@ const StyledProject = styled.div`
     }
 `
 const ProjectImage = styled.div`
-    flex: 2;
+    flex: 3;
 `
 const ProjectContent = styled.div`
     flex: 4;

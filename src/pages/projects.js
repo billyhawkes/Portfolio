@@ -7,7 +7,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 
 const StyledProjects = styled.div`
-    width: 80%;
+    width: 75%;
     margin: auto;
 `
 

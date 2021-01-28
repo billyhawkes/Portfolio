@@ -31,9 +31,9 @@ const StyledLinks = styled.aside`
     }
     @media only screen and (max-width: 600px) {
         position: relative;
-        margin-top: 1rem;
+        margin: 1rem auto;
         left: 0;
-        width: 100%;
+        width: 80%;
         font-size: 0.8rem;
         ul {
             display: flex;
@@ -44,6 +44,9 @@ const StyledLinks = styled.aside`
             flex-direction: column-reverse;
             height: 4rem;
             width: 4rem;
+        }
+        li:hover {
+            transform: none;
         }
     }
 `
