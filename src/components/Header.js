@@ -25,7 +25,12 @@ const StyledHeader = styled.header`
         margin-left: 2rem;
     }
     a {
+        display: inline-block;
         font-size: 1.5rem;
+        transition: transform 0.05s linear;
+    }
+    a:hover {
+        transform: scale(1.05);
     }
     @media only screen and (max-width: 600px) {
         ul {

@@ -26,14 +26,25 @@ const ProjectContent = styled.div`
         font-size: 1.6em;
     }
     p {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
         height: 7.5rem;
         overflow-y: scroll;
     }
     @media only screen and (max-width: 800px) {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         h3 {
             text-align: center;
+        }
+    }
+    @media only screen and (orientation: landscape) and (max-height: 800px) {
+        font-size: 0.8rem;
+        p {
+            height: 5.5rem;
+        }
+    }
+    @media only screen and (min-width: 2000px) {
+        p {
+            height: 10rem;
         }
     }
 `

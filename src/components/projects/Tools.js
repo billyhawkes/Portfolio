@@ -7,7 +7,7 @@ const StyledTools = styled.div`
     margin-top: 0.5rem;
     div {
         padding: 0.2em 0.5em;
-        margin-right: 0.3rem;
+        margin: 0.2rem 0.2rem 0 0;
         font-size: 0.9em;
         font-weight: bold;
         height: 1.8em;

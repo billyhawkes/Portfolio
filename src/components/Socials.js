@@ -29,7 +29,8 @@ const StyledLinks = styled.aside`
         transform: translate(5.5rem, 0rem);
         background-color: #3f4750;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px),
+        (orientation: landscape) and (max-height: 800px) {
         position: relative;
         margin: 1rem auto;
         left: 0;

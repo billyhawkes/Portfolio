@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledHero = styled.section`
-    height: 80vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +22,9 @@ const StyledHero = styled.section`
         h2 {
             font-size: 7vw;
         }
+    }
+    @media only screen and (orientation: landscape) and (max-height: 800px) {
+        height: 80vh;
     }
 `
 
